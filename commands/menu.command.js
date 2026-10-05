@@ -19,6 +19,7 @@ export default class MenuCommand {
         type: 'list',
         name: 'entidad',
         message: 'Selecciona una entidad:',
+        pageSize: 15,
         choices: [
           ...this.entidades.map((item) => ({ name: item.nombre, value: item })),
           new inquirer.Separator(),
