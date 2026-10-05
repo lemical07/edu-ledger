@@ -56,7 +56,7 @@ export default class CrudCommand {
       }))
     });
 
-    const { valor } = await this.pedirValor(criterio, false);
+    const valor = await this.pedirValor(criterio, false);
     const registros = await this.servicio.buscar(criterio, valor);
     this.mostrarRegistros(registros);
   }
@@ -133,7 +133,7 @@ export default class CrudCommand {
       }))
     });
 
-    const { valor } = await this.pedirValor(criterio, false);
+    const valor = await this.pedirValor(criterio, false);
     const registros = await this.servicio.buscar(criterio, valor);
 
     if (!registros.length) {
