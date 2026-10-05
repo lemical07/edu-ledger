@@ -1,12 +1,17 @@
 import BaseRepository from './base.repository.js';
 
-export default class CoursesSchedulesRepository extends BaseRepository {
+export default class ClassroomsRepository extends BaseRepository {
   constructor(pool) {
     super(pool, {
-      tableName: 'courses_schedules',
-      modelName: 'course_schedule',
-      columns: ['id', 'course_id', 'teacher_id', 'classroom_id', 'start_date', 'end_date', 'active'],
-      searchCriteria: {}
+      tableName: 'classrooms',
+      modelName: 'classroom',
+      columns: ['id', 'code', 'description', 'capacity', 'active'],
+      searchCriteria: {
+        code: {
+          sql: 'SELECT * FROM classrooms WHERE code = ?',
+          transform: (value) => value
+        }
+      }
     });
   }
 }
