@@ -38,6 +38,7 @@ academia_edu-ledger/
 ├── database/
 │   ├── database.js
 │   └── schema.sql
+│   └── seed.sql
 ├── models/
 │   ├── identification-types.model.js
 │   ├── cities.model.js
