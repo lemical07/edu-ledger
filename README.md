@@ -20,6 +20,10 @@ Aplicación de gestión académica por consola desarrollada con Node.js, ES Modu
 
 No se utilizan frameworks, ORM ni dependencias adicionales.
 
+## UML Diagram
+
+![Edu Ledger UML Diagram](./docs/uml-diagram.png)
+
 ## Estructura
 
 ```text
